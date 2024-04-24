@@ -1,8 +1,14 @@
+import { SimpleWidget } from "@/components";
 
 export default function MainPage() {
   return (
-    <div>
-      <h1>Hello Main Page</h1>
+    <div className="text-black p-2">
+      <h1 className="mt-2 text-3xl">Dashboard</h1>
+      <h1 className="text-xl">Informacion general</h1>
+
+      <div className="flex flex-wrap p-2 items-center justify-center">
+        <SimpleWidget />
+      </div>
     </div>
   );
 }
