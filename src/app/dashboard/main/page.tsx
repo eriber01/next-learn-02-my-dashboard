@@ -1,13 +1,18 @@
-import { SimpleWidget } from "@/components";
+import { HeaderPage, WidgetsGrid } from "@/components";
+import type { Metadata } from "next";
+
+
+export const metadata: Metadata = {
+  title: 'Admin Dashboard',
+  description: 'Admin Dashboard',
+};
 
 export default function MainPage() {
   return (
-    <div className="text-black p-2">
-      <h1 className="mt-2 text-3xl">Dashboard</h1>
-      <h1 className="text-xl">Informacion general</h1>
-
+    <div className="text-black">
+      <HeaderPage name="Dashboard" description="Informacion general" />
       <div className="flex flex-wrap p-2 items-center justify-center">
-        <SimpleWidget />
+        <WidgetsGrid />
       </div>
     </div>
   );

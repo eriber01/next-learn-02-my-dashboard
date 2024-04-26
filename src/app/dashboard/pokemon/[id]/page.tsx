@@ -74,8 +74,6 @@ export default async function PokemonPage({ params }: Props) {
               alt={`Imagen del pokemon ${pokemon.name}`}
               className="mb-5"
             />
-
-
             <div className="flex flex-wrap">
               {
                 pokemon.moves.map(move => (

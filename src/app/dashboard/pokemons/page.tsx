@@ -1,3 +1,4 @@
+import { HeaderPage } from "@/components";
 import { PokemonGrid, PokemonResponse, SimplePokemon } from "@/pokemons";
 import type { Metadata } from "next";
 
@@ -23,14 +24,7 @@ export default async function PokemonsPage() {
 
   return (
     <div className="flex flex-col">
-      <div className="flex justify-center my-6">
-        <div className="bg-white text-black py-1 shadow text-2xl text-center border rounded w-2/4">
-          <div className="flex flex-col">
-            <span>Listado de Pokemons</span>
-            <small className="text-black/50">(estaticos)</small>
-          </div>
-        </div>
-      </div>
+      <HeaderPage name="Listado de Pokemons" description="estaticos" />
       <PokemonGrid pokemons={pokemons} />
     </div>
   );

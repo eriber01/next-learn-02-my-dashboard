@@ -1,7 +1,7 @@
 'use client'
 
 import Link from "next/link"
-import { MenuItemsI } from "./interfaces"
+import { MenuItemsI } from "../interfaces"
 import { usePathname } from "next/navigation"
 
 export const SidebarMenuItem = ({ path, icon, title, subTitle }: MenuItemsI) => {

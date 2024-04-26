@@ -1,7 +1,7 @@
 import Image from "next/image"
 import { IoBrowsersOutline, IoCalculator, IoFootball, IoHeartOutline, IoLogoReact } from "react-icons/io5"
 import { SidebarMenuItem } from "./SidebarMenuItem"
-import { MenuItemsI } from "./interfaces"
+import { MenuItemsI } from "../interfaces"
 
 
 const menuItems: MenuItemsI[] = [
